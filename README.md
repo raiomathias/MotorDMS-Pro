@@ -1,5 +1,9 @@
 # MotorDMS Pro
 
+**Versión actual de la interfaz: v0.1**
+
+La interfaz muestra el número de versión y comprueba periódicamente si hay una versión posterior publicada; cuando la detecta, ofrece recargar la aplicación.
+
 Aplicación web inicial para gestión de automotoras chilenas, con autenticación Supabase y un inventario de vehículos persistido en PostgreSQL.
 
 ## Estado actual
