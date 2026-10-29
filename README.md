@@ -8,7 +8,7 @@ Aplicación web inicial para gestión de automotoras chilenas, con autenticació
 - No hay registro público en la interfaz. Las cuentas se crean desde **Administrar usuarios**.
 - Perfiles y permisos: `sysadmin`, `administrador` y `vendedor`.
 - Sysadmin y administrador pueden crear administradores o vendedores. La función de base de datos rechaza asignar `sysadmin` desde la gestión normal de usuarios.
-- La cuenta inicial de Mathias Michell está asociada a la automotora interna AutoGest Pro.
+- El perfil inicial de Mathias Michell está creado con rol `sysadmin` y asociado a la automotora interna AutoGest Pro. La contraseña de esa cuenta debe terminar de establecerse desde la administración de Auth antes de poder verificar el acceso.
 - Inventario conectado a `public.vehicles`: lectura, búsqueda, filtros y alta de vehículos persistidos en Supabase.
 - Aislamiento por automotora mediante `dealership_id` y Row Level Security (RLS).
 
