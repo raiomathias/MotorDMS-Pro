@@ -42,7 +42,7 @@ select:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-
 </head>
 <body class="auth-pending">
 <div class="app">
-<header class="top"><div class="brand-lockup"><div class="brand"><span class="logo">M</span><span>MotorDMS <span style="color:#1768e5">Pro</span></span></div><div class="version-line"><span id="versionStatus">v0.6</span><span id="versionUpdateNotice" hidden></span></div></div><div style="display:flex;gap:10px;align-items:center"><span class="muted" id="userLabel"></span><button id="signOut" class="hidden">Cerrar sesión</button></div></header>
+<header class="top"><div class="brand-lockup"><div class="brand"><span class="logo">M</span><span>MotorDMS <span style="color:#1768e5">Pro</span></span></div><div class="version-line"><span id="versionStatus">v0.5</span><span id="versionUpdateNotice" hidden></span></div></div><div style="display:flex;gap:10px;align-items:center"><span class="muted" id="userLabel"></span><button id="signOut" class="hidden">Cerrar sesión</button></div></header>
 <main class="wrap">
 <div class="heading"><div><div class="eyebrow">GESTIÓN DE ACTIVOS</div><h1>Inventario de vehículos</h1><div class="muted">Stock, costos y precios publicados de tu automotora.</div></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button id="registerSale" class="primary" type="button">Registrar venta</button><button id="adminPanel" class="secondary hidden" type="button">Panel Administrativo</button><button id="newVehicle" class="primary">＋ Ingresar vehículo</button></div></div>
 <div class="stats"><article class="stat"><span>Vehículos registrados</span><strong id="totalCount">0</strong></article><article class="stat"><span>Disponibles</span><strong id="availableCount">0</strong></article><article class="stat"><span>Capital invertido</span><strong id="capitalCount">$0</strong></article></div>
@@ -119,4 +119,4 @@ async function comprobarVersionPublicada(){const notice=$('versionUpdateNotice')
 setTimeout(comprobarVersionPublicada,8000);setInterval(comprobarVersionPublicada,45000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)comprobarVersionPublicada()});
 sessionStart().then(()=>{if(dealershipId)subscribeVehicles()}).catch(e=>{location.replace(new URL('../?error=session',document.baseURI).href)});
 </script>
-<script src="../keyboard.js" defer></script></body></html>
+</body></html>
