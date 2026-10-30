@@ -1,6 +1,6 @@
 # MotorDMS Pro
 
-**Versión actual de la interfaz: v0.1**
+**Versión actual de la interfaz: v0.6**
 
 La interfaz muestra el número de versión y comprueba periódicamente si hay una versión posterior publicada; cuando la detecta, ofrece recargar la aplicación.
 
@@ -15,6 +15,25 @@ Aplicación web inicial para gestión de automotoras chilenas, con autenticació
 - El perfil inicial de Mathias Michell está creado con rol `sysadmin` y asociado a la automotora interna MotorDMS Pro. La contraseña de esa cuenta debe terminar de establecerse desde la administración de Auth antes de poder verificar el acceso.
 - Inventario conectado a `public.vehicles`: lectura, búsqueda, filtros y alta de vehículos persistidos en Supabase.
 - Aislamiento por automotora mediante `dealership_id` y Row Level Security (RLS).
+
+
+## Navegación mediante teclado (v0.6)
+
+La aplicación incorpora navegación orientada al teclado en el acceso, inventario, panel administrativo y registro de ventas. Los botones muestran una etiqueta discreta con su combinación asignada. Atajos principales:
+
+- `Alt + 1…9`: cambiar entre secciones del menú.
+- `Alt + N`: crear o ingresar un registro nuevo.
+- `Alt + S`: enviar/guardar el formulario activo.
+- `Alt + F` o `/`: enfocar la búsqueda.
+- `Alt + R`: actualizar datos.
+- `Alt + V`: abrir el registro de ventas.
+- `Alt + B`: volver al inventario.
+- `Alt + Q`: cerrar sesión.
+- `Esc`: cerrar ventanas y paneles.
+- `Ctrl + K` o `?`: abrir el buscador de atajos y acciones.
+- `Tab` / `Shift + Tab`: recorrer campos y controles; `Enter` / `Espacio` activa el control enfocado.
+
+Las acciones adicionales reciben combinaciones únicas visibles junto a cada botón. Las sugerencias de autocompletado mantienen sus controles de flechas y Enter.
 
 ## Ejecutar
 
