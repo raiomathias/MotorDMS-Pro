@@ -55,7 +55,7 @@ El esquema incluye `dealerships`, `dealership_members`, `profiles`, `vehicles`, 
 
 ## Acceso y permisos
 
-El nombre de acceso se normaliza como usuario interno (por ejemplo, `Nombre Apellido` → `nombre.apellido`) y se vincula a un identificador interno de autenticación; no se requiere correo en la pantalla de inicio de sesión. Las contraseñas deben tener al menos 8 caracteres.
+El nombre de acceso se normaliza como usuario interno (por ejemplo, `Nombre Apellido` → `nombre.apellido`) y se vincula a un identificador interno de autenticación; no se requiere correo en la pantalla de inicio de sesión. Las contraseñas deben tener al menos 12 caracteres.
 
 - **Sysadmin:** control global; puede crear administradores y vendedores. Es el único rol reservado para asignación inicial o intervención privilegiada.
 - **Administrador:** puede crear administradores y vendedores.
